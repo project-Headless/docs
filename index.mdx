@@ -1,7 +1,13 @@
 ---
-title: Introduction
-description: "Welcome to the home of your new documentation"
+title: Getting Started
+description: "Welcome to Knot Docs!"
 ---
+
+Knot.dev is an AI-powered platform that creates stunning e-commerce websites from simple prompts or image references—no coding required.
+It seamlessly connects to your favourite backend while building custom headless React frontends,
+giving you the best of both worlds: your favourite e-commerce power with complete design freedom.
+Beyond building websites, use chat commands to manage products, generate professional images, and update your store in real-time.
+With both visual and code editors, you maintain full control over your site.
 
 <img
   className="block dark:hidden"
@@ -14,58 +20,47 @@ description: "Welcome to the home of your new documentation"
   alt="Hero Dark"
 />
 
-## Setting up
+<Note>Shopify integration available now, with WooCommerce & Stripe standalone coming soon</Note>
 
-The first step to world-class documentation is setting up your editing environments.
+## Requirements
 
-<CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development
-  </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-</CardGroup>
+To start using Knot.dev, you will need the following:
 
-## Make it yours
+- A Knot.dev account
+- A Shopify store - don't have one? <a href="https://www.shopify.com/?ref=knotdev" target="_blank" rel="noopener noreferrer">Sign up for a free trial</a>
+- An API key and Shopify domain
 
-Update your docs to your brand and add valuable content for the best user conversion.
+## Getting your API key
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/content/components/accordions"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+
+<iframe
+  src="https://www.loom.com/embed/0bc878a4a8464932a58760fd16fe3f2b?sid=205289bb-e86f-43d9-81e1-eebccb2f7c45"
+  width="100%"
+  height="400"
+  title="How to obtain Shopify API key"
+></iframe>
+
+<Steps>
+    <Step title="Install Headless App">
+        Install the Headless app from the <a href="https://apps.shopify.com/headless" target="_blank" rel="noopener noreferrer">Shopify App Store</a>.
+        - Navigate to the 'Apps' section.
+        - Type 'headless' in the search bar.
+        - Click on 'Install' to add the headless application.
+    </Step>
+    <Step title="Create a storefront">
+        Once installed, click on the Headless app in your Shopify admin, locate and click on 'Create Storefront'.
+    </Step>
+    <Step title="Copy your credentials">
+        - Click on 'Manage' next to the Storefront API option.
+        - Open a note-taking application to store your tokens.
+        - Copy the 'Public Access Token' & 'Private Access Token' from the Storefront API settings.
+    </Step>
+    <Step title="Note your store domain">
+        Your Shopify domain is your store's URL in the format `your-store-name.myshopify.com`. You'll need this along with your API token.
+
+        If you forgot your store domain, you can find it in the Shopify admin under "Settings" > "General".
+
+    </Step>
+</Steps>
+
+**Ready to start a new project?** Let's move on to the next step:
