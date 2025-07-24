@@ -36,48 +36,32 @@
         "group": "Integrations & Addons",
         "icon": "plug",
         "pages": [
-          "features/introduction",
-          "features/visual-editor",
-          "features/code-editor",
-          "features/media",
-          "features/custom-knowledge",
-          "features/custom-domain",
-          "features/deploy"
-        ]
-      },
-      {
-        "group": "Best Practices",
-        "icon": "check-circle",
-        "pages": [
-          "features/introduction",
-          "features/visual-editor",
-          "features/code-editor",
-          "features/media",
-          "features/custom-knowledge",
-          "features/custom-domain",
-          "features/deploy"
+          "integrations/introduction",
+          "integrations/pixels"
         ]
       }
     ],
     "pages": [
+      "plans-and-credits",
+      "faq",
       "change-log"
     ],
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Changelog",
+          "href": "https://knot.featurebase.app/changelog",
+          "icon": "newspaper"
         },
         {
           "anchor": "Community",
-          "href": "https://mintlify.com/community",
+          "href": "https://discord.gg/gxc6yrsc",
           "icon": "discord"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Feature Requests",
+          "href": "https://knot.featurebase.app",
+          "icon": "Lightbulb"
         }
       ]
     }

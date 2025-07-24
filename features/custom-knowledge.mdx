@@ -1,5 +1,100 @@
 ---
 title: 'Custom Project Knowledge'
 description: 'Add custom knowledge to your project'
-icon: 'book-open'
 ---
+
+## Overview
+
+Custom Project Knowledge allows you to provide specific instructions and context to the AI assistant for your project. This feature ensures the AI follows your preferred patterns, styles, and conventions when generating or modifying code.
+
+## Accessing Project Settings
+
+To add custom knowledge to your project:
+
+1. Click the dropdown menu in the top-left corner of the editor
+2. Select **Project Settings**
+3. Find the **Custom Instructions** section
+
+## How It Works
+
+When you add custom instructions, they are included as a pre-prompt with every chat interaction. This means the AI will:
+- Apply your preferences automatically
+- Follow your specified patterns consistently
+- Maintain your project's unique requirements
+
+## Example Instructions
+
+Here are some effective custom knowledge prompts you can use:
+
+### Design Preferences
+```
+Always use rounded buttons with 8px border radius
+Use the primary color #FFC382 for all CTA buttons
+Maintain 16px spacing between all components
+```
+
+### Code Style
+```
+Use TypeScript for all new components
+Follow the existing naming convention: PascalCase for components, camelCase for functions
+Import components using absolute paths from '@/components'
+```
+
+### Business Logic
+```
+Always display prices with 2 decimal places
+Show "Out of Stock" instead of hiding unavailable products
+Include free shipping badge for orders over $50
+```
+
+### Component Patterns
+```
+Use the existing Card component for all product displays
+Wrap all pages in the Layout component
+Include loading states for all async operations
+```
+
+## Best Practices
+
+<Tip>
+**Effective Custom Instructions:**
+- Be specific and clear about your requirements
+- Reference existing patterns in your codebase
+- Focus on repeatable conventions rather than one-time changes
+- Update instructions as your project evolves
+</Tip>
+
+<Warning>
+**Avoid:**
+- Contradictory instructions
+- Overly complex rules that might confuse the AI
+- Instructions that conflict with platform limitations
+</Warning>
+
+## Advanced Usage
+
+You can combine multiple types of instructions:
+
+```
+Design System:
+- Use Inter font family for all text
+- Primary button height: 48px
+- Card shadows: 0 2px 8px rgba(0,0,0,0.1)
+
+Code Standards:
+- All API calls must include error handling
+- Use React Query for data fetching
+- Components must have TypeScript interfaces
+
+Content Rules:
+- Product descriptions max 150 characters
+- Always include alt text for images
+- Use title case for all headings
+```
+
+## Tips for Success
+
+1. **Start simple**: Add a few clear instructions and test their effectiveness
+2. **Iterate**: Refine your instructions based on the AI's responses
+3. **Document patterns**: Include examples of existing code patterns you want to maintain
+4. **Review regularly**: Update instructions as your project requirements change

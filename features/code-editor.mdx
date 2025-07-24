@@ -1,5 +1,164 @@
 ---
-title: 'Code Editor'
-description: 'View & Edit your project’s code directly in Knot'
-icon: 'code'
+title: Code Editor
+description: "View & Edit your project's code directly in Knot"
 ---
+
+## Overview
+
+The Knot Code Editor gives you full control over your store's source code with a powerful, professional editing experience. Whether you're making quick tweaks or implementing complex features, the editor provides all the tools you need to work efficiently.
+
+<Frame caption="The Code Editor interface with syntax highlighting, file explorer, and live preview">
+<img src="/images/code-editor-overview.png" alt="Code Editor Overview" style={{width: '100%', maxWidth: '900px', margin: '20px 0'}} />
+</Frame>
+
+## Key Features
+
+### Intelligent Code Editing
+- **Syntax Highlighting**: Automatic language detection and color coding
+- **Auto-completion**: Smart suggestions as you type
+- **Error Detection**: Real-time error highlighting and diagnostics
+- **Code Formatting**: Automatic formatting with customizable rules
+
+### Advanced Navigation
+- **File Explorer**: Browse and manage your project files
+- **Quick Open**: Fast file switching with `Cmd/Ctrl + P`
+- **Go to Definition**: Jump to function and variable definitions
+- **Find & Replace**: Powerful search across files with regex support
+
+## Getting Started
+
+<Steps>
+    <Step title="Access the Code Editor">
+        Click the code icon <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{display: 'inline-block', verticalAlign: 'middle'}}><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg> in the top navigation to open the editor
+    </Step>
+    <Step title="Navigate your files">
+        Use the file explorer on the left to browse your project structure. Click any file to open it in the editor.
+    </Step>
+    <Step title="Make your changes">
+        Edit code with full syntax highlighting and auto-completion support. Changes are tracked automatically.
+    </Step>
+    <Step title="Save your work">
+        Press `Cmd/Ctrl + S` to save the current file, or use auto-save to save changes automatically.
+    </Step>
+</Steps>
+
+## File Management
+
+### File Explorer
+The file explorer panel shows your entire project structure:
+- **Create new files**: Right-click in the explorer and select "New File"
+- **Rename files**: Right-click and select "Rename" or press `F2`
+- **Delete files**: Right-click and select "Delete" (with confirmation)
+- **Move files**: Drag and drop to reorganize your project
+
+<Frame caption="File explorer showing project structure with context menu options">
+<img src="/images/file-explorer.png" alt="File Explorer" style={{width: '100%', maxWidth: '400px', margin: '20px 0'}} />
+</Frame>
+
+### Supported File Types
+The editor provides specialized support for:
+- **React/JSX**: Component editing with JSX syntax support
+- **TypeScript**: Full type checking and IntelliSense
+- **CSS/SCSS**: Style editing with color previews
+- **JSON**: Configuration files with schema validation
+- **Markdown**: Documentation with live preview
+
+## Editor Features
+
+### Multi-Cursor Editing
+Hold `Alt/Option` and click to add multiple cursors, allowing you to edit multiple locations simultaneously.
+
+### Code Folding
+Click the arrow icons in the gutter to collapse/expand code blocks, making it easier to navigate large files.
+
+### Split View
+Open multiple files side-by-side by dragging tabs or using `Cmd/Ctrl + \` to split the editor.
+
+<Frame caption="Split view showing HTML and CSS files side-by-side">
+<img src="/images/split-view.png" alt="Split View Editor" style={{width: '100%', maxWidth: '900px', margin: '20px 0'}} />
+</Frame>
+
+## Keyboard Shortcuts
+
+### Essential Shortcuts
+| Action | Windows/Linux | Mac |
+|--------|--------------|-----|
+| Save file | `Ctrl + S` | `Cmd + S` |
+| Open file | `Ctrl + P` | `Cmd + P` |
+| Find in file | `Ctrl + F` | `Cmd + F` |
+| Find & Replace | `Ctrl + H` | `Cmd + H` |
+| Comment line | `Ctrl + /` | `Cmd + /` |
+| Duplicate line | `Ctrl + D` | `Cmd + D` |
+| Move line up/down | `Alt + ↑/↓` | `Option + ↑/↓` |
+| Multi-cursor | `Alt + Click` | `Option + Click` |
+
+### Advanced Shortcuts
+| Action | Windows/Linux | Mac |
+|--------|--------------|-----|
+| Go to definition | `F12` | `F12` |
+| Find all references | `Shift + F12` | `Shift + F12` |
+| Rename symbol | `F2` | `F2` |
+| Format document | `Shift + Alt + F` | `Shift + Option + F` |
+| Toggle terminal | `Ctrl + `` ` | `Cmd + `` ` |
+
+## Working with Git
+
+The Code Editor includes Git integration:
+- **View changes**: Modified files are marked in the explorer
+- **Diff view**: See what changed in each file
+- **Stage changes**: Select which changes to include
+- **Commit**: Write commit messages and push changes
+
+<Note>
+**Version Control**: All changes are automatically tracked. You can view file history and revert changes at any time.
+</Note>
+
+## Tips for Efficient Coding
+
+<Tip>
+**Pro Tips:**
+- Use `Cmd/Ctrl + Shift + P` to open the command palette for quick access to all editor commands
+- Enable auto-save in settings to never lose your work
+- Use the minimap on the right for quick navigation in large files
+- Customize your theme and font size in editor settings
+</Tip>
+
+<Warning>
+**Important**: While the Code Editor gives you full control, be careful when modifying core files. Always test your changes in preview before publishing.
+</Warning>
+
+## Common Use Cases
+
+### Customizing Components
+1. Locate the component file in the explorer
+2. Make your modifications
+3. Preview changes in real-time
+4. Save when satisfied
+
+### Adding Custom CSS
+1. Open your stylesheet file
+2. Add new styles or modify existing ones
+3. Use the color picker for easy color selection
+4. See changes reflected immediately in preview
+
+### Implementing New Features
+1. Create new component files
+2. Import necessary dependencies
+3. Write your implementation
+4. Test thoroughly before publishing
+
+## Troubleshooting
+
+### Code Not Updating
+- Ensure you've saved your changes (`Cmd/Ctrl + S`)
+- Check for syntax errors in the problems panel
+- Refresh the preview window if needed
+
+### IntelliSense Not Working
+- Wait a moment for the language server to initialize
+- Ensure your file has the correct extension
+- Check for errors in imported modules
+
+<Info>
+**Need Help?** The editor includes built-in documentation. Hover over any function or component to see its documentation, or press `Cmd/Ctrl + Click` to jump to its definition.
+</Info>

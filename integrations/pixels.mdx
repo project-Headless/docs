@@ -1,0 +1,113 @@
+---
+title: 'Analytics & Tracking Pixels'
+description: 'Add Google Analytics, Facebook Pixel, and custom tracking scripts to your store'
+---
+
+## Overview
+
+Knot supports multiple tracking and analytics solutions to help you understand your store's performance and customer behavior. You can easily integrate Google Analytics, Facebook Pixel, and custom tracking scripts.
+
+## Supported Pixel Types
+
+### Google Analytics
+
+Track visitor behavior, conversion rates, and e-commerce performance with Google Analytics.
+
+**To add Google Analytics:**
+1. Navigate to **Project Settings** � **Integrations**
+2. Find the **Google Analytics** section
+3. Enter your Measurement ID (e.g., `G-XXXXXXXXXX`)
+4. Click **Save**
+
+**To remove:** Leave the field empty and save.
+
+### Facebook Pixel
+
+Track conversions, optimize ads, and build targeted audiences for your Facebook campaigns.
+
+**To add Facebook Pixel:**
+1. Navigate to **Project Settings** � **Integrations**
+2. Find the **Facebook Pixel** section
+3. Enter your Pixel ID (e.g., `XXXXXXXXXXXXXXX`)
+4. Click **Save**
+
+**To remove:** Leave the field empty and save.
+
+### Custom Pixels
+
+Add any third-party tracking script or analytics tool not covered by the built-in integrations.
+
+**To add Custom Pixels:**
+1. Navigate to **Project Settings** � **Integrations**
+2. Click **Add Custom Pixel**
+3. Enter a name for your pixel (e.g., "TikTok Pixel", "Hotjar", "Klaviyo")
+4. Paste your tracking script in the code field
+5. Click **Save**
+
+<Info>
+**No limitations**: You can add as many custom pixels as needed for your tracking requirements.
+</Info>
+
+**To remove:** Click the delete button next to the custom pixel, then save.
+
+## How It Works
+
+When you save your pixel configurations:
+- The tracking scripts are automatically injected into your store
+- Changes take effect immediately on your live site
+- All pixels are loaded asynchronously to maintain site performance
+
+## Best Practices
+
+<Tip>
+**Pixel Setup Tips:**
+- Test your pixels using browser developer tools or pixel helper extensions
+- Add pixels one at a time to ensure each works correctly
+- Use custom pixels for any tracking service not directly supported
+</Tip>
+
+## Common Custom Pixel Examples
+
+### TikTok Pixel
+```javascript
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+  ttq.load('YOUR_PIXEL_ID');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+```
+
+### Hotjar
+```javascript
+<script>
+(function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:YOUR_SITE_ID,hjsv:6};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+```
+
+## Privacy Considerations
+
+<Warning>
+**Important**: Ensure you comply with privacy regulations (GDPR, CCPA) when implementing tracking pixels. Update your privacy policy to reflect the tracking tools you use.
+</Warning>
+
+## Troubleshooting
+
+**Pixel not firing?**
+- Check that your pixel ID is correct
+- Verify the script is properly formatted
+- Use browser developer tools to check for console errors
+- Test with pixel helper browser extensions
+
+**Performance issues?**
+- Review the number of pixels you've added
+- Consider consolidating tracking through a tag manager
+- Check that custom scripts are optimized
