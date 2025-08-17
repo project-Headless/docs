@@ -17,32 +17,48 @@ To start using Knot.dev, you will need the following:
 
 - A Knot.dev account
 - A Shopify store - don't have one? <a href="https://www.shopify.com/?ref=knotdev" target="_blank" rel="noopener noreferrer">Sign up for a free trial</a>
-- An API key and Shopify domain
+- A private shopify app with Storefront API access - <a href="#getting-your-api-key">see instructions below</a>
 
-## Getting your API key
+## Getting your Admin API key And Storefront API key
 
-
-<iframe
-  src="https://www.loom.com/embed/0bc878a4a8464932a58760fd16fe3f2b?sid=205289bb-e86f-43d9-81e1-eebccb2f7c45"
-  width="100%"
-  height="400"
-  title="How to obtain Shopify API key"
-></iframe>
+<Note>
+    We need both the Admin API key and Storefront API key to connect your Shopify store to Knot.dev
+    the Admin Api key allows us to manage products, collections, and orders,
+    while the Storefront API key enables us to fetch product data and display it on your website.
+</Note>
 
 <Steps>
-    <Step title="Install Headless App">
-        Install the Headless app from the <a href="https://apps.shopify.com/headless" target="_blank" rel="noopener noreferrer">Shopify App Store</a>.
-        - Navigate to the 'Apps' section.
-        - Type 'headless' in the search bar.
-        - Click on 'Install' to add the headless application.
+    <Step title="Create a private app">
+        - Log in to your Shopify admin panel.
+        - Navigate to 'Apps' in the left sidebar.
+        - App and sales channel settings
+        - Develop apps on the top right
+        - Click 'Create an app', provide a name (e.g., "Knot"), and click 'Create app'.
+        - Obtain your API credentials
+
+        <Danger>You must save the API credentials now, as you won't be able to see them again!</Danger>
+
     </Step>
-    <Step title="Create a storefront">
-        Once installed, click on the Headless app in your Shopify admin, locate and click on 'Create Storefront'.
+    <Step title="Give permissions - Admin API scopes">
+        | Type      | Options                               |
+        | --------  | ------------------------------------- |
+        | Discounts | Read discounts, write discounts         |
+        | Inventory | Read inventory, write inventory         |
+        | Price rules | Read price rules, write price rules     |
+        | Product feeds | Read product feeds, write product feeds |
+        | Product listings | Read product listings, write product listings |
+        | Products | Read products, write products         |
+        | Publications | Read publications, write publications |
+        | Analytics   | Read analytics                        |
+        | Metaobject definitions | Read metaobjects, write metaobjects     |
+        | Metaobject entries | Read metaobjects, write metaobjects     |
+
+        <Note>
+            You can always adjust these later if you need more functionality and as we add more features
+        </Note>
     </Step>
-    <Step title="Copy your credentials">
-        - Click on 'Manage' next to the Storefront API option.
-        - Open a note-taking application to store your tokens.
-        - Copy the 'Public Access Token' & 'Private Access Token' from the Storefront API settings.
+    <Step title={"Storefront API access scopes"}>
+        Check all the boxes to enable full access for the Storefront API
     </Step>
     <Step title="Note your store domain">
         Your Shopify domain is your store's URL in the format `your-store-name.myshopify.com`. You'll need this along with your API token.
