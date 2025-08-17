@@ -16,12 +16,27 @@
         "icon": "compass",
         "pages": [
           "index",
-          "create-project"
+          "create-project",
+          "create-studio-project",
+          "create-instant-project"
         ]
       },
       {
-        "group": "The Editor",
+        "group": "The Studio Editor",
         "icon": "star",
+        "pages": [
+          "features/chat-modes",
+          "features/visual-editor",
+          "features/code-editor",
+          "features/media",
+          "features/custom-knowledge",
+          "features/custom-domain",
+          "features/deploy"
+        ]
+      },
+      {
+        "group": "The Instant Editor",
+        "icon": "bolt",
         "pages": [
           "features/chat-modes",
           "features/visual-editor",
